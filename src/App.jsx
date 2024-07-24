@@ -19,23 +19,18 @@ export default function App() {
         <Hero />
       </section>
       <section className="padding">
-        {" "}
         <PopularProducts />
       </section>
       <section className="padding">
-        {" "}
         <SuperQualityProducts />
       </section>
       <section className="padding-x py-10">
-        {" "}
         <Services />
       </section>
       <section className="padding">
-        {" "}
         <SpecialOffer />
       </section>
       <section className="bg-pale-blue padding">
-        {" "}
         <CustomerReview />
       </section>
       <section className="padding-x sm:py-32 py-16 w-full">
