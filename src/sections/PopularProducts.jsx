@@ -14,24 +14,31 @@ function PopularProducts() {
           Experience top-notch quality and style with our sought after
           selections. Discover a world of comfort, design, and value
         </p>
+      </div>
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-col-1 mt-16 justify-center items-center sm:gap-4  gap-14">
+        {products.map((pro) => (
+          <div
+            key={pro.name}
+            className="flex-1 flex-col gap-4 w-full max-sm:w-full"
+          >
+            <img src={pro.imgURL} alt="" className="w-[280px] h-[280px]" />
 
-        <div className="flex gap-4 justify-center items-center">
-          {products.map((pro) => (
-            <div key={pro.name} className="flex-col gap-4">
-              <div>
-                <img src={pro.imgURL} alt="" />
+            <div className="mt-8 flex flex-col justify-start gap-2.5">
+              <div className="flex">
+                <img src={star} alt="" width={24} height={24} />
+                <p className="font-montserrat text-xl leading-normal text-slate-gray">
+                  (4.5)
+                </p>
               </div>
-              <div className="flex flex-col">
-                <div className="flex">
-                  <img src={star} alt="" />
-                  <span> (4.5)</span>
-                </div>
-                <h2 className="font-bold">{pro.name}</h2>
-                <h3 className="text-coral-red">{pro.price}</h3>
-              </div>
+              <h3 className="font-bold mt-2 text-2xl leading-normal font-semibold font-palanquin">
+                {pro.name}
+              </h3>
+              <p className="text-coral-red mt-2 font-semibold font-montserrat text-2xl leading-normal">
+                {pro.price}
+              </p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
