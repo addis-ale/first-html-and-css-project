@@ -14,7 +14,7 @@ function Subscribe() {
       <div>
         <input type="text" placeholder="subscribe@nike.com" className="input" />
         <div>
-          <Button label="Sign Up" />
+          <Button label="Sign Up/log in" />
         </div>
       </div>
     </section>
